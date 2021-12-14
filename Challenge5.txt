@@ -1,0 +1,7 @@
+Count letters in the string !
+
+1.Create a function countChar with  2 arguments (string,char), witch count each character index of the string and compare with char.
+2.Create another function countLetters witch recive a string as an argument and return countChar function .
+3.Write the result to the console.log(countLetters(string))
+
+GOOD LUCK!!!

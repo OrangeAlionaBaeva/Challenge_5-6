@@ -1,0 +1,4 @@
+REMOVE key sensitive
+
+1. Take the function countChar from previous challange and make the string no key sensitive by using sting build in method.
+2. Try the output in console.log().

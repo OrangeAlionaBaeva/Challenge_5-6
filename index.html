@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Count letters in the string!</title>
+    <script src="./script.js"></script>
+    <style>
+        body {
+            font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+        }
+        
+        .test {
+            /* display: flex; */
+            /* justify-content: center; */
+            line-height: 30px;
+            font-size: 16px;
+        }
+        
+        .calculations,
+        .test {
+            /* display: flex; */
+            width: 85%;
+            margin: 0 auto;
+            padding-top: 50px;
+            /* justify-content: space-around; */
+        }
+        /* .nametest,
+        .listtest {
+            border: 1px solid black;
+        } */
+        
+        .nametest {
+            text-align: center;
+            font-size: 24px;
+            font-weight: 900;
+            padding-bottom: 40px;
+        }
+        
+        .calculationsString {
+            border: 1px solid;
+            padding: 35px;
+        }
+        
+        #stringInput {
+            width: 700px;
+        }
+        
+        #charInput {
+            width: 300px;
+        }
+        
+        #stringIs {
+            color: green;
+        }
+        /* #stringIs {
+            text-transform: uppercase;
+        } */
+        /* #dolphinsAverage,
+        #koalasAverage {
+            color: green;
+            font-size: 16px;
+        }
+        
+        #winner,
+        #winnerScore {
+            color: red;
+            font-size: 16px;
+        } */
+    </style>
+
+
+
+</head>
+
+<body>
+
+    <div class="test">
+        <div class="nametest">Давайте посчитаем символы в строке!</div>
+        <div class="listtest">
+            Возможные варианты для тестов
+            <ul>
+                <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry</li>
+                <li>The 346 standard chunk of 346 Lorem Ipsum used since the 1500s is reproduced 346 below for those interested</li>
+                <li>Сайт 456 рыбатекст 567 поможет дизайнеру, верстальщику, 6732 вебмастеру 67 сгенерировать 56786</li>
+                <li>При ! создании генератора @ *** мы & & &&& 1960s with the release of Letraset sheets :: containing : Lorem $$$ </li>
+                <li>!! юя gd 22 <br>// Длина строки - 11 символов ( 2 спецсимвола, 4 буквы, 2 цифры, 3 пробела)</li>
+                <li>LLL</li>
+                <li>123</li>
+                <li>&!*@@ <br> // Длина строки - 5 символов</li>
+            </ul>
+        </div>
+
+
+
+    </div>
+    <div class="calculations">
+        <div class="calculationsString">
+            <div class="data">
+                <h2>Пожалуйста, введите строку </h2>
+                <br>Ваша строка:
+                <input type="text" id="stringInput" placeholder="enter the string" value="">
+                <button onclick="displayStr()">DISPLAY STRING </button>
+                <button onclick="myFunctionRefresh()">RESET STRING</button>
+                <br>
+                <br>
+                <div id="stringIs"></div>
+                <div id="stringNumChars"></div>
+                <div id="stringNumCharsNum"></div>
+                <div id="stringNumCharsSimb"></div>
+
+                <h2>Пожалуйста, введите 1 символ, который вы хотите посчитать</h2>
+                <br>Ваш символ:
+                <input type="text" id="charInput" placeholder="enter the char" value="">
+                <button onclick="displayChar()">DISPLAY CHAR </button>
+                <button onclick="myFunctionRefreshChar()">RESET CHAR</button>
+                <br>
+                <br>
+                <div id="charIs"></div>
+                <div id="charNumIs"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
